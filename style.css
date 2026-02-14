@@ -1,0 +1,394 @@
+@import url('https://fonts.cdnfonts.com/css/minecraftia');
+
+*{margin:0;
+  padding:0;
+  box-sizing:border-box;
+  user-select:none;
+}
+body {height:100vh;
+  width:100vw;
+  font-family:'Minecraftia',sans-serif;
+  background:#000;display:flex;
+  justify-content:center;
+  align-items:center;position:relative;
+  overflow:hidden;
+  transition:filter 0.5s ease;}
+.background-banner
+
+{position:fixed;
+  top:0;left:0;width:100%;
+  height:100%;
+  background:url('assets/banner.gif') center center / cover no-repeat;
+  z-index:-1;
+  transition:filter 0.5s ease;}
+
+/* Overlay startowy */
+#overlay {
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.7);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  z-index:999;
+  cursor:pointer;
+  opacity:1;
+  transition: opacity 0.6s ease;
+}
+#overlay.fade-out {
+  opacity:0;
+  pointer-events:none;
+}
+
+#overlay-text {
+  color:white;
+  font-size:60px;
+  letter-spacing:5px;
+  user-select:none;
+  animation: pulse 1.2s infinite;
+}
+
+/* Pulsowanie napisu */
+@keyframes pulse {
+  0%,100%{transform:scale(1);}
+  50%{transform:scale(1.3);}
+}
+
+/* Blur gdy overlay aktywny */
+body.overlay-active .background-banner,
+body.overlay-active .profile-card{
+  filter: blur(10px);
+}
+
+/* Blur efekt gdy overlay aktywny */
+body.overlay-active .background-banner,
+body.overlay-active .profile-card{
+  filter: blur(10px);
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  font-family: 'Minecraftia', sans-serif;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.background-banner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('assets/banner.gif') center center / cover no-repeat;
+  z-index: -1;
+}
+
+.profile-card {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.top-row {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.avatar {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.user-info {
+  color: white;
+  flex-grow: 1;
+}
+
+.name-with-badge {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.crown-icon {
+  width: 20px;
+  height: 20px;
+  filter: drop-shadow(0 0 5px white);
+}
+
+.subtitle {
+  font-size: 10px;
+  line-height: 12px;
+  color: #e4e4e4;
+  margin-top: 2px;
+  height: 12px;
+  overflow: hidden;
+  position: relative;
+}
+
+#typing-text {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.lanyard-card {
+  margin-top: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.lanyard-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.lanyard-avatar {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.lanyard-info {
+  color: white;
+  font-size: 14px;
+  flex: 1;
+}
+
+.social-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.social-icons,
+.crypto-icons {
+  display: flex;
+  gap: 20px;
+}
+
+.icon {
+  width: 26px;
+  height: 26px;
+  filter: drop-shadow(0 0 5px white);
+  transition: transform 0.2s ease;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.icon:hover {
+  transform: scale(1.2);
+}
+
+.tooltip {
+  position: absolute;
+  bottom: 140%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fff;
+  color: #000;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  white-space: nowrap;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.copyable {
+  position: relative;
+  display: inline-block;
+  background: transparent;
+  color: #e4e4e4;
+  cursor: pointer;
+  font-size: 14px;
+  transition: color 0.2s ease;
+}
+
+.copyable:hover {
+  color: white;
+}
+
+.copyable .tooltip {
+  bottom: 140%;
+}
+
+.at-gray {
+  color: #e4e4e4;
+  user-select: none;
+  pointer-events: none;
+}
+
+.music-player-card {
+  margin-top: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  border-radius: 10px;
+  backdrop-filter: blur(70%);
+  color: white;
+}
+
+.music-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.music-info img {
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.track-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.track-details p {
+  margin: 0;
+}
+
+.player-controls-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 12px;
+}
+
+.main-controls {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+
+.control-icon {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  filter: invert(1);
+  transition: transform 0.2s ease;
+}
+
+.control-icon:hover {
+  transform: scale(1.15);
+}
+
+.volume-control {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  height: 24px;
+}
+
+.volume-control img {
+  width: 24px;
+  height: 24px;
+  filter: invert(1) drop-shadow(0 0 4px white);
+  transition: transform 0.2s ease;
+}
+
+.volume-control img:hover {
+  transform: scale(1.1);
+}
+
+#volume-slider {
+  width: 120px;
+  appearance: none;
+  height: 6px;
+  border-radius: 10px;
+  background: linear-gradient(to right, white 100%, rgba(255,255,255,0.2) 0%);
+  outline: none;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+#volume-slider::-webkit-slider-thumb {
+  appearance: none;
+  width: 0px;
+  height: 0px;
+  border-radius: 50%;
+  background: white;
+  cursor: pointer;
+  margin-top: -4px;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+#volume-slider::-webkit-slider-thumb:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 8px white;
+}
+
+#volume-slider::-moz-range-thumb {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: white;
+  cursor: pointer;
+  border: none;
+}
+
+.progress-container {
+  width: 100%;
+  margin-top: 16px;
+}
+
+.time-display {
+  display: flex;
+  justify-content: space-between;
+  font-size: 9px;
+  margin-bottom: 6px;
+  color: white;
+  opacity: 0.8;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 6px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  width: 0%;
+  background: white;
+  border-radius: 10px;
+  transition: width 0.1s linear;
+  pointer-events: none;
+}
