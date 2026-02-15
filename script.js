@@ -167,6 +167,11 @@ const tracks = [
   { title: "190 bmin",
  artist: "@skevvi",
  src: "assets/music/lv sandals type beat 190bpm bmin @skevvi.mp3",
+ cover: "assets/music/covers/1.png" },
+
+  { title: "140 cmaj",
+ artist: "@skevvi",
+ src: "assets/music/ginseng type beat 140bpm cmaj @skevvi.mp3",
  cover: "assets/music/covers/1.png" }
 
 ];
