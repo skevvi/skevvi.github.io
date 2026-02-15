@@ -154,12 +154,12 @@ const tracks = [
  src: "assets/music/heavenly emotional jerk 178bpm emaj +231cents @skevvi.mp3",
  cover: "assets/music/covers/1.png" },
 
-  { title: "120 cmin",
+  { title: "120bpm cmin",
  artist: "@skevvi",
  src: "assets/music/free for profit experimental x skevvi type beat cursed (prod. @skevvi).mp3",
  cover: "assets/music/covers/1.png" },
 
-  { title: "102 c#min",
+  { title: "102bpm c#min",
  artist: "@skevvi, @dominicb",
  src: "assets/music/emotional jerk.mp3",
  cover: "assets/music/covers/1.png" }
@@ -240,3 +240,4 @@ audio.addEventListener("ended", () => { nextBtn.click(); });
 // Init
 // ===============================
 loadTrack(currentTrackIndex);
+
