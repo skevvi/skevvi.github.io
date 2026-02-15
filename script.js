@@ -161,7 +161,7 @@ const tracks = [
 
   { title: "102 c#min",
  artist: "@skevvi, @dominicb",
- src: "assets/music/emotional jerk type beat 102bpm c#min @skevvi @dominicb.mp3",
+ src: "assets/music/emotional jerk.mp3",
  cover: "assets/music/covers/1.png" }
 
 ];
@@ -240,3 +240,4 @@ audio.addEventListener("ended", () => { nextBtn.click(); });
 // Init
 // ===============================
 loadTrack(currentTrackIndex);
+
