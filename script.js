@@ -150,18 +150,24 @@ const tracks = [
  src: "assets/music/444jet x janu4ryss type beat 175 bpm dmin @skevvi.mp3",
  cover: "assets/music/covers/1.png" },
 
-  { title: "178bpm emaj +231cents", artist: "@skevvi",
+  { title: "178bpm emaj +231cents",  
+ artist: "@skevvi",
  src: "assets/music/heavenly emotional jerk 178bpm emaj +231cents @skevvi.mp3",
  cover: "assets/music/covers/1.png" },
 
-  { title: "120bpm cmin",
+  { title: "120 cmin",
  artist: "@skevvi",
  src: "assets/music/free for profit experimental x skevvi type beat cursed (prod. @skevvi).mp3",
  cover: "assets/music/covers/1.png" },
 
-  { title: "102bpm c#min",
+  { title: "102 c#min",
  artist: "@skevvi, @dominicb",
  src: "assets/music/emotional jerk.mp3",
+ cover: "assets/music/covers/1.png" },
+
+  { title: "190 bmin",
+ artist: "@skevvi",
+ src: "assets/music/lv sandals type beat 190bpm bmin @skevvi.mp3",
  cover: "assets/music/covers/1.png" }
 
 ];
@@ -240,4 +246,3 @@ audio.addEventListener("ended", () => { nextBtn.click(); });
 // Init
 // ===============================
 loadTrack(currentTrackIndex);
-
