@@ -38,7 +38,7 @@ document.addEventListener("mousemove", e => {
 // ===============================
 document.addEventListener("DOMContentLoaded", () => {
   const typingText = document.getElementById("typing-text");
-  const subtitleText = "music producer :)";
+  const subtitleText = "4 buy beats, DM! ";
   let i = 0, isDeleting = false;
 
   function typeSubtitle() {
@@ -150,8 +150,7 @@ const tracks = [
  src: "assets/music/444jet x janu4ryss type beat 175 bpm dmin @skevvi.mp3",
  cover: "assets/music/covers/1.png" },
 
-  { title: "178bpm emaj +231cents",  
- artist: "@skevvi",
+  { title: "178bpm emaj +231cents", artist: "@skevvi",
  src: "assets/music/heavenly emotional jerk 178bpm emaj +231cents @skevvi.mp3",
  cover: "assets/music/covers/1.png" },
 
